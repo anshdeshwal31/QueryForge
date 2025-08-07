@@ -81,9 +81,8 @@ def health_check():
     """Health check endpoint"""
     return jsonify({"status": "healthy", "message": "RAG service is running"})
 
-if __name__ == '__main__':
-    # Ensure required directories exist
-    os.makedirs('utils/db', exist_ok=True)
-    os.makedirs('templates', exist_ok=True)
-    
-    app.run(debug=True, host='0.0.0.0', port=5000)
+if __name__ == "__main__":
+    # Only run in debug mode locally, not in production
+    import os
+    debug_mode = os.environ.get('VERCEL_ENV') != 'production'
+    app.run(debug=debug_mode, host='0.0.0.0', port=5000)
