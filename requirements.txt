@@ -19,9 +19,12 @@ gunicorn==21.2.0
 langchain
 langchain-core
 langchain-community
-langchain-google-genai==2.0.0
-faiss-cpu==1.8.0
-chromadb==0.4.24
+# langchain-google-genai==2.0.0
+langchain-google-genai
+faiss-cpu
+# faiss-cpu==1.8.0
+# chromadb==0.4.24
+chromadb
 # numpy==1.26.0
 typing-extensions==4.12.2
 tenacity==8.2.3
