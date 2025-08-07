@@ -1,8 +1,9 @@
 flask==3.0.0
 flask-cors==4.0.0
 langchain-google-genai==2.1.9
+langchain-community==0.0.13
 langchain-core==0.3.72
-langchain-text-splitters==0.0.1
+langchain-text-splitters==0.0.10
 google-generativeai==0.8.0
 pypdf==4.0.1
 python-dotenv==1.0.0
