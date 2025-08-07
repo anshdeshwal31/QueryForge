@@ -82,7 +82,6 @@ def health_check():
     return jsonify({"status": "healthy", "message": "RAG service is running"})
 
 if __name__ == "__main__":
-    # Only run in debug mode locally, not in production
     import os
-    debug_mode = os.environ.get('VERCEL_ENV') != 'production'
-    app.run(debug=debug_mode, host='0.0.0.0', port=5000)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=False, host='0.0.0.0', port=port)
