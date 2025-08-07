@@ -1,0 +1,15 @@
+rag-env/
+__pycache__/
+*.pyc
+.env
+.env.local
+.env.example
+node_modules/
+.git/
+.gitignore
+*.log
+data/
+utils/db/
+test_*.py
+start.sh
+start.bat

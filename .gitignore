@@ -1,0 +1,13 @@
+rag-env/
+utils/db/
+*.pyc
+__pycache__/
+*.pkl
+*.tmp
+*.log
+!.env.example
+.env
+.env.*
+.DS_Store
+.vscode/
+*.swp

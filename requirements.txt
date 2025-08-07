@@ -1,0 +1,12 @@
+flask==3.0.0
+flask-cors==4.0.0
+langchain-google-genai==2.1.9
+langchain-community==0.0.13
+langchain-core==0.1.10
+langchain-text-splitters==0.0.1
+google-generativeai==0.8.0
+pypdf==4.0.1
+python-dotenv==1.0.0
+requests==2.31.0
+faiss-cpu==1.11.0
+pydantic==2.11.7
