@@ -16,9 +16,9 @@ charset-normalizer==3.4.2
 idna==3.10
 urllib3==2.5.0
 gunicorn==21.2.0
-langchain==0.3.0
-langchain-core==0.3.70
-langchain-community==0.3.27
+langchain
+langchain-core
+langchain-community
 langchain-google-genai==2.0.0
 faiss-cpu==1.8.0
 chromadb==0.4.24
