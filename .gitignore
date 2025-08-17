@@ -62,4 +62,4 @@ utils/db/
 
 # Vercel deployment environments (these shouldn't be in git)
 vercel-env-clean/
-vercel-deploy-env/
+vercel-deploy-env
