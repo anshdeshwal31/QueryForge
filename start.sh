@@ -8,10 +8,14 @@ pip install -r requirements.txt
 if [ ! -f ".env" ]; then
     echo "Creating .env file from template..."
     cp .env.example .env
-    echo "Please edit .env file and add your OpenAI API key before running the application."
+    echo "Please edit .env file and add your Google API key before running the application."
     exit 1
 fi
 
-# Start the Flask application
+# Run Django migrations
+echo "Running Django migrations..."
+python manage.py migrate
+
+# Start the Django application
 echo "Starting RAG Pipeline API server..."
-python app.py
+python manage.py runserver

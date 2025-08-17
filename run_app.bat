@@ -2,7 +2,7 @@
 echo Activating virtual environment...
 call "rag-env\Scripts\activate.bat"
 
-echo Starting Flask RAG application...
-python app.py
+echo Starting Django RAG application...
+python manage.py runserver
 
 pause

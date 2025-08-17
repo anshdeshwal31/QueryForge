@@ -114,11 +114,22 @@ Visit `http://localhost:5000` to access the web interface where you can:
 ## Project Structure
 
 ```
-finserv RAG/
-├── app.py                      # Main Flask application
+QueryForge/
+├── manage.py                   # Django management script
 ├── requirements.txt            # Python dependencies
 ├── .env.example               # Environment variables template
 ├── start.sh / start.bat       # Startup scripts
+├── queryforge/                # Django project settings
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── wsgi.py
+│   └── asgi.py
+├── rag_api/                   # Django app
+│   ├── __init__.py
+│   ├── apps.py
+│   ├── urls.py
+│   └── views.py              # API endpoints
 ├── templates/
 │   └── index.html             # Web UI
 ├── utils/
@@ -145,7 +156,7 @@ The API returns appropriate HTTP status codes:
 
 ## Dependencies
 
-- Flask: Web framework
+- Django: Web framework
 - LangChain: RAG pipeline framework
 - Google Gemini: Language model API (replaced OpenAI)
 - FAISS: Vector database (replaced ChromaDB - no gRPC issues!)

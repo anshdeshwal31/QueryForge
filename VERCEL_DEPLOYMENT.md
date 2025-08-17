@@ -66,7 +66,9 @@ Visit: `https://your-project-name.vercel.app`
 │   └── rag_service.py
 ├── templates/
 │   └── index.html
-├── app.py                # Main Flask app
+├── manage.py             # Django management script
+├── queryforge/           # Django project settings
+├── rag_api/              # Django app
 ├── vercel.json           # Vercel configuration
 ├── requirements.txt      # Python dependencies
 └── .vercelignore        # Files to ignore during deployment

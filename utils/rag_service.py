@@ -14,7 +14,7 @@ class RAGService:
         self.llm = ChatGoogleGenerativeAI(
             model="gemini-1.5-flash",
             google_api_key=os.getenv("GOOGLE_API_KEY"),
-            temperature=0
+            temperature=0.3
         )
         
         # Initialize embeddings (same as document processor)
@@ -25,8 +25,7 @@ class RAGService:
         
         # Custom prompt template
         self.prompt_template = PromptTemplate(
-            template="""Use the following pieces of context to answer the question at the end. 
-            If you don't know the answer, just say that you don't know, don't try to make up an answer.
+            template="""Use the following pieces of context to answer the question at the end.
             
             Context: {context}
             
