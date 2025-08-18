@@ -100,9 +100,24 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# CORS settings
-CORS_ALLOW_ALL_ORIGINS = True  # Configure appropriately for production
-CORS_ALLOW_CREDENTIALS = False
+# CORS settings - Update these
+CORS_ALLOW_ALL_ORIGINS = True  # For development
+CORS_ALLOW_CREDENTIALS = True  # Change this to True
+CORS_ALLOWED_ORIGINS = [
+    "https://queryforge-frontend.vercel.app",  # Your actual frontend domain
+    "http://localhost:3000",  # For local development
+    "https://localhost:3000",
+]
+
+CORS_ALLOW_METHODS = [
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+]
+
 CORS_ALLOW_HEADERS = [
     'accept',
     'accept-encoding',
@@ -113,6 +128,7 @@ CORS_ALLOW_HEADERS = [
     'user-agent',
     'x-csrftoken',
     'x-requested-with',
+    'access-control-allow-origin',
 ]
 
 # Disable CSRF for API endpoints (configure appropriately for production)

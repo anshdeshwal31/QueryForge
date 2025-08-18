@@ -7,11 +7,11 @@ import { Toaster } from '@/components/ui/sonner'
 export const metadata: Metadata = {
   title: 'QueryForge - Document Q&A',
   description: 'Ask questions to your PDFs and docs with Gemini-powered RAG',
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/favicon.ico',
-  },
+  // icons: {
+  //   icon: '/favicon.ico',
+  //   shortcut: '/favicon.ico',
+  //   apple: '/favicon.ico',
+  // },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
