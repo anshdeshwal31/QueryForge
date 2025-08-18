@@ -203,7 +203,7 @@ export default function Page() {
           // }}
         >
           <motion.div 
-            className='w-[270px] sm:w-[400px] md:w-[400px] h-[150px] sm:h-[200px] blur-3xl bg-indigo-900 absolute'
+            className='w-[270px] sm:w-[400px] md:w-[380px] h-[150px] sm:h-[200px] blur-3xl bg-indigo-900 absolute'
             animate={{
               // rotate: [0, -360],
               y:[0,30,0],
@@ -230,7 +230,7 @@ export default function Page() {
             }}
           />
           <motion.div 
-            className='w-[270px] sm:w-[400px] md:w-[600px] h-[80px] sm:h-[100px] blur-3xl bg-indigo-900 absolute -left-24 sm:-left-32'
+            className='w-[270px] sm:w-[400px] md:w-[540px] h-[80px] sm:h-[100px] blur-3xl bg-indigo-900 absolute -left-24 sm:-left-32'
             animate={{
               y: [0, 25, -25, 0],
               scale: [1, 1.1, 1],
