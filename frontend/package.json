@@ -1,3 +1,4 @@
+
 {
   "name": "bajaj-finserv-rag-frontend",
   "private": true,
@@ -9,7 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@clerk/nextjs": "^6.9.6",
+    "@clerk/nextjs": "^6.31.1",
     "autoprefixer": "10.4.18",
     "axios": "1.7.7",
     "class-variance-authority": "^0.7.1",
